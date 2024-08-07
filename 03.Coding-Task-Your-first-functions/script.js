@@ -7,11 +7,11 @@ Welcome Jane!
 Welcome Marc! */
 
 function welcomeMsg() {
-  "Welcome Jane!";
-  "Welcome Marc!";
+  console.log("Welcome Jane!");
+  console.log("Welcome Marc!");
 }
 
-console.log(welcomeMsg);
+welcomeMsg();
 
 /* 
 02. Gross Price Function
@@ -29,10 +29,10 @@ console.log(calcGrossPrice(40, 0.16)); <--- 1.16 ????
 */
 
 function calcGrossPrice(a, b, c, d) {
-  return a * b + c * d;
+  return a * b;
 }
 
-console.log(calcGrossPrice(20, 1.19, 40, 1.16));
+calcGrossPrice(20, 1.19, 40, 1.16);
 // Result: 70.20
 
 /* 
