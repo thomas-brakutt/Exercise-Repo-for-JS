@@ -3,15 +3,20 @@
 Implement welcomeMsg function
 - The first parameter is the name of the person to be greeted. It's a string.
 - The function should return a string that contains the name of person in a welcome msg.
-Welcome Jane!
-Welcome Marc! */
 
-function welcomeMsg() {
-  console.log("Welcome Jane!");
-  console.log("Welcome Marc!");
+console.log(welcomeMsg("Jane"));
+// Welcome Jane!
+
+console.log(welcomeMsg("Marc"));
+// Welcome Marc!
+*/
+
+function welcomeMsg(a) {
+  return "Welcome " + a;
 }
 
-welcomeMsg();
+console.log(welcomeMsg("Jane!"));
+console.log(welcomeMsg("Marc!"));
 
 /* 
 02. Gross Price Function
@@ -29,10 +34,10 @@ console.log(calcGrossPrice(40, 0.16)); <--- 1.16 ????
 */
 
 function calcGrossPrice(a, b, c, d) {
-  return a * b;
+  return a * b + c * d;
 }
 
-calcGrossPrice(20, 1.19, 40, 1.16);
+console.log(calcGrossPrice(20, 1.19, 40, 1.16));
 // Result: 70.20
 
 /* 
@@ -56,14 +61,15 @@ console.log(addPositive(-1, -8));
 */
 
 function addPositive(a, b) {
-  return a + b;
+  return Math.abs(a) + Math.abs(b); // Math.abs wandelt neg. Zahlen in positive Zahlen um
 }
 
 console.log(addPositive(2, 3));
 // Result: 5
 
 console.log(addPositive(3, -5));
-// Result: -2
+// Result: 8
 
 console.log(addPositive(-1, -8));
-// Result: -9
+// Result: 9
+
