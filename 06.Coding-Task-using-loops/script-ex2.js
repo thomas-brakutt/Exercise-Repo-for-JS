@@ -17,4 +17,27 @@ console.log(charCount("mama", "m"));
 // result should be: 2
 
 console.log(charCount("Resümee", "e"));
-// result should be: 3  */
+// result should be: 3  
+-----------------------------------------------------------------------*/
+
+function charCount(word, letter) {
+  if (typeof (word + letter) !== "string") {
+    // nur "String" erlaubt - funktioniert nicht
+    return "nur Buchstaben erlaubt!";
+  }
+  word = word.toLowerCase(); // function case insensitive machen
+  letter = letter.toLowerCase(); // function case insensitive machen
+  if (letter.length > 1) {
+    // nur ein Buchstabe erlaubt
+    return "nur ein Buchstabe erlaubt!";
+  }
+  for (let index = 0; index < word.length; index++) {
+    return word + letter;
+  }
+}
+
+console.log(charCount("2323", "2"));
+
+console.log(charCount("hello", "l"));
+console.log(charCount("mama", "m"));
+console.log(charCount("Resümee", "e"));
