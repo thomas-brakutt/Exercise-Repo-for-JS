@@ -37,7 +37,7 @@ function sumOfCharacters(array) {
       //console.log(typeof array[index]); // <-- checkt den typeof im array die mit true ausgegeben werden
       //console.log(array[index]); // < --
       resultArr.push(array[index]); // wenn true, dass wird der Eintrag mit der .push methode in den resultArr übertragen
-      console.log(resultArr);
+      // console.log(resultArr); // <-- zeigt an, welche Werte im "resultArr" gespeichert wurden
     }
   }
   return resultArr.join("").length; // .join methode gibt den inhalt zusammengefasst als string("")raus
