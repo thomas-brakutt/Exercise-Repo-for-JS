@@ -16,30 +16,30 @@ console.log(oddNumbers(9, 12));
 // result should be: 9,11
 */
 
-function oddNumbers(a, b) {
-  //check, dass nur positive Zahlen möglich sind
-  if ((a < 0, b < 0)) {
-    return "nur positive Zahlen";
-  }
+// function oddNumbers(a, b) {
+//   //check, dass nur positive Zahlen möglich sind
+//   if ((a < 0, b < 0)) {
+//     return "nur positive Zahlen";
+//   }
 
-  /* Sicherstellen, dass der Startwert kleiner oder gleich dem Endwert ist
-    if (start > end) {
-      return "Der Startwert sollte kleiner oder gleich dem Endwert sein.";
-  } 
-  */
+//   /* Sicherstellen, dass der Startwert kleiner oder gleich dem Endwert ist
+//     if (start > end) {
+//       return "Der Startwert sollte kleiner oder gleich dem Endwert sein.";
+//   }
+//   */
 
-  for (let oddNumbers = a; oddNumbers <= b; oddNumbers++) {
-    if (oddNumbers % 2 !== 0) {
-      console.log(oddNumbers);
-    }
-  }
-}
+//   for (let oddNumbers = a; oddNumbers <= b; oddNumbers++) {
+//     if (oddNumbers % 2 !== 0) {
+//       console.log(oddNumbers);
+//     }
+//   }
+// }
 
-console.log(oddNumbers(0, 4));
+// console.log(oddNumbers(0, 4));
 
-console.log(oddNumbers(10, 33));
+// console.log(oddNumbers(10, 33));
 
-console.log(oddNumbers(9, 12));
+// console.log(oddNumbers(9, 12));
 
 /* -----------------------------------------------------------------------------------
 
