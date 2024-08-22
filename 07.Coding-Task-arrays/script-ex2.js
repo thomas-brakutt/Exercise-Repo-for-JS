@@ -30,7 +30,7 @@ function removeItem(array, number) {
   const copyArray = structuredClone(array); // ursprünglich: const copyArray = [...array]; ???
   // Erstelle eine Kopie des Arrays, um die Originaldaten nicht zu mutieren
 
-  copyArray.splice(number - 1, 1);
+  copyArray.splice(number - 1, 1); // Notiz .splice(number -1, 1): -1 muss angegeben werden, da wir keine 0 angeben können, verrechnet sich dann; 1 = der bereich der entfernt werden soll, in diesem Fall eine Position
   // Entferne das Element am angegebenen Index (non-zero-based)
 
   return copyArray;

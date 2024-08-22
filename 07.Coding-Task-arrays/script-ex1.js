@@ -28,14 +28,21 @@ const arr2 = [
   "When you have",
   "to explain it, it's bad!",
 ];
+const resultArr = [];
 
 function sumOfCharacters(array) {
-  count = 0;
   for (let index = 0; index <= array.length; index++) {
-    return array;
+    if (typeof array[index] === "string") {
+      // checkt einen Eintrag nach dem anderen ob es ein string ist
+      //console.log(typeof array[index]);
+      //console.log(array[index]);
+      resultArr.push(array[index]); // wenn true, dass wird der Eintrag mit der .push methode in den resultArr übertragen
+      //console.log(resultArr);
+    }
   }
-}
+  return resultArr.join("").length; // .join methode gibt den inhalt zusammengefasst als string("")raus
+} // .length methode zählt die "Zeichen"
 
-console.log(sumOfCharacters(arr1));
+//console.log(sumOfCharacters(arr1));
 
 console.log(sumOfCharacters(arr2));
