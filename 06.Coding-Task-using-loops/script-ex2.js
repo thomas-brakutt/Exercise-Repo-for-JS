@@ -21,29 +21,30 @@ console.log(charCount("Resümee", "e"));
 -----------------------------------------------------------------------*/
 
 function charCount(word, letter) {
+  // check, dass nur Buchstaben ("string") verwendet werden
   if (typeof word != "string" || typeof letter != "string") {
-    // nur "String" erlaubt - funktioniert nicht
     return "nur Buchstaben erlaubt!";
   }
 
-  word = word.toLowerCase(); // function case insensitive machen
-  letter = letter.toLowerCase(); // function case insensitive machen
+  word = word.toLowerCase(); // Parameter case insensitive machen
+  letter = letter.toLowerCase(); // Parameter case insensitive machen
 
   if (letter.length > 1) {
     // nur ein Buchstabe erlaubt
     return "nur ein Buchstabe erlaubt!";
   }
-  let count = 0;
-  //console.log(word[0]);
+  let count = 0; // Variable erstellt die das Ergebniss sammelt (startet leer (0))
+  // console.log(word[0]); // <- Zugriff auf "word" Parameter, [] = welche Position
   for (let index = 0; index < word.length; index++) {
-    // console.log(word[index], letter);
+    // console.log(word[index], letter); // check des Durchlaufs der Schleife
     if (word[index] === letter) {
-      count += 1; //count = count +1
+      // wenn Iteration der einzelnen Buchstaben vom Word-Parameter = true, dann werden sie mit in Count-Variablen gezählt (count += 1;)
+      count += 1; // <- = kurzschreibweise für count = count +1
     }
   }
-  return count;
+  return count; // gezählten Übereinstimmungen werden ausgegeben und die Schleife beendet
 }
 
-console.log(charCount("hello", "l"));
-console.log(charCount("mama", "m"));
-console.log(charCount("Resümee", "e"));
+console.log(charCount("hello", "l")); // result 2
+console.log(charCount("mama", "m")); // result 2
+console.log(charCount("Resümee", "e")); // result 3
