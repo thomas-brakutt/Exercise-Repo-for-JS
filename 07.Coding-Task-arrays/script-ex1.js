@@ -28,9 +28,9 @@ const arr2 = [
   "When you have",
   "to explain it, it's bad!",
 ];
-const resultArr = [];
 
 function sumOfCharacters(array) {
+  const resultArr = [];
   for (let index = 0; index <= array.length; index++) {
     if (typeof array[index] === "string") {
       // checkt einen Eintrag nach dem anderen ob es ein string ist
